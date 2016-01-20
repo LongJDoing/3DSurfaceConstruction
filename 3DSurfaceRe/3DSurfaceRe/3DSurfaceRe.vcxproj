@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63CD7EAC-D5D6-4034-A5D6-F34AF6F75A7C}</ProjectGuid>
+    <RootNamespace>MyProject13</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>3DSurfaceRe</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\temp code\3DSurfaceRe\3DSurfaceRe\SDK;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\temp code\3DSurfaceRe\3DSurfaceRe\SDK;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\3DSurfaceRe.ico" />
+    <None Include="res\3DSurfaceRe.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConnectComponentLabel.h" />
+    <ClInclude Include="Dialog1.h" />
+    <ClInclude Include="Dialog2.h" />
+    <ClInclude Include="Dialog3.h" />
+    <ClInclude Include="MyDIdefine.h" />
+    <ClInclude Include="GaussEliminate.h" />
+    <ClInclude Include="HQualityMapGuidedUn.h" />
+    <ClInclude Include="ImageOperate.h" />
+    <ClInclude Include="InputDialog.h" />
+    <ClInclude Include="Morphology.h" />
+    <ClInclude Include="My1DMorphology.h" />
+    <ClInclude Include="MyAlgebra.h" />
+    <ClInclude Include="MyGeometry.h" />
+    <ClInclude Include="MyLeastSquare.h" />
+    <ClInclude Include="MyNewtonMethod.h" />
+    <ClInclude Include="MyPhase.h" />
+    <ClInclude Include="3DSurfaceRe.h" />
+    <ClInclude Include="3DSurfaceReDlg.h" />
+    <ClInclude Include="queue.h" />
+    <ClInclude Include="ResizeControl.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SetResolution.h" />
+    <ClInclude Include="Setup.h" />
+    <ClInclude Include="ShowImageDialog.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VQualityMapGuidedUn.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConnectComponentLabel.cpp" />
+    <ClCompile Include="Dialog1.cpp" />
+    <ClCompile Include="Dialog2.cpp" />
+    <ClCompile Include="Dialog3.cpp" />
+    <ClCompile Include="MyDIdefine.cpp" />
+    <ClCompile Include="GaussEliminate.cpp" />
+    <ClCompile Include="HQualityMapGuidedUn.cpp" />
+    <ClCompile Include="ImageOperate.cpp" />
+    <ClCompile Include="InputDialog.cpp" />
+    <ClCompile Include="Morphology.cpp" />
+    <ClCompile Include="My1DMorphology.cpp" />
+    <ClCompile Include="MyAlgebra.cpp" />
+    <ClCompile Include="MyGeometry.cpp" />
+    <ClCompile Include="MyLeastSquare.cpp" />
+    <ClCompile Include="MyNewtonMethod.cpp" />
+    <ClCompile Include="MyPhase.cpp" />
+    <ClCompile Include="3DSurfaceRe.cpp" />
+    <ClCompile Include="3DSurfaceReDlg.cpp" />
+    <ClCompile Include="ResizeControl.cpp" />
+    <ClCompile Include="SetResolution.cpp" />
+    <ClCompile Include="Setup.cpp" />
+    <ClCompile Include="ShowImageDialog.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VQualityMapGuidedUn.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="3DSurfaceRe.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
