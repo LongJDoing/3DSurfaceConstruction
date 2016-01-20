@@ -2,7 +2,7 @@
 My Master's graduation project in SJTU
 
 Including:
-3D surface construction project with a camera and projector using C++
+3D surface construction project with a camera and projector using C++; it used a camera SDK to catch images;
 Also, I add a research paper which puliched in The International Journal of Medical Robotics and Computer Assisted Surgery;
 you can download in http://onlinelibrary.wiley.com/doi/10.1002/rcs.1626/full
 
