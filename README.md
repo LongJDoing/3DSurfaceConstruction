@@ -14,4 +14,4 @@ you can download in http://onlinelibrary.wiley.com/doi/10.1002/rcs.1626/full
 ######1.
 ![image](https://github.com/LongJDoing/3DSurfaceConstruction/blob/master/Page%205%2C%20object%2029.jpg)
 #####2.
-![image](https://github.com/LongJDoing/3DSurfaceConstruction/blob/master/Page%206%2C%20object%2041.tiff)
+![image](https://github.com/LongJDoing/3DSurfaceConstruction/blob/master/Page%206%2C%20object%2041.jpg)
